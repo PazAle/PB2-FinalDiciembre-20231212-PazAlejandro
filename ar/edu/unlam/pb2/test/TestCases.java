@@ -69,6 +69,8 @@ public class TestCases {
 		
 		Integer valorEsperado = 1;
 		Integer valorObtenido = clubDeportivoUNLaM.getCanchas().size();
+		
+		assertEquals(valorEsperado, valorObtenido);
 	}
 
 	@Test(expected = NumeroDeCanchaDuplicadoException.class)
